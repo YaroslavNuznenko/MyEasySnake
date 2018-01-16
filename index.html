@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <style>
+        #main{
+            width: 500px;
+            height: 500px;
+            display: block;
+            margin: 0 auto;
+            background: black;
+        }
+        .explanation{
+            position: absolute;
+            top: 10%;
+            left: 1%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="explanation">
+    <h2>Use this buttons for control the snake. </h2>
+    <img src="http://labs.minutelabs.io/Relativistic-Space-Sheep/library-build/images/wasd.png" alt="" class="controls">
+
+    <h1>Score: <span id="score"></span></h1>
+</div>
+<canvas id="main" width="500" height="500"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
